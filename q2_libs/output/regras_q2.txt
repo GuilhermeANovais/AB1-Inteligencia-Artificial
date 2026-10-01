@@ -1,0 +1,37 @@
+|--- Historia de Credito_Ruim <= 0.50
+|   |--- Renda_Acima de 35k <= 0.50
+|   |   |--- Divida_Baixa <= 0.50
+|   |   |   |--- Renda_15 a 35k <= 0.50
+|   |   |   |   |--- class: Alto
+|   |   |   |--- Renda_15 a 35k >  0.50
+|   |   |   |   |--- Historia de Credito_Desconhecida <= 0.50
+|   |   |   |   |   |--- class: Moderado
+|   |   |   |   |--- Historia de Credito_Desconhecida >  0.50
+|   |   |   |   |   |--- class: Alto
+|   |   |--- Divida_Baixa >  0.50
+|   |   |   |--- Historia de Credito_Boa <= 0.50
+|   |   |   |   |--- Renda_15 a 35k <= 0.50
+|   |   |   |   |   |--- Idade_Idoso <= 0.50
+|   |   |   |   |   |   |--- class: Alto
+|   |   |   |   |   |--- Idade_Idoso >  0.50
+|   |   |   |   |   |   |--- class: Moderado
+|   |   |   |   |--- Renda_15 a 35k >  0.50
+|   |   |   |   |   |--- class: Moderado
+|   |   |   |--- Historia de Credito_Boa >  0.50
+|   |   |   |   |--- class: Baixo
+|   |--- Renda_Acima de 35k >  0.50
+|   |   |--- Idade_Meia-Idade <= 0.50
+|   |   |   |--- class: Baixo
+|   |   |--- Idade_Meia-Idade >  0.50
+|   |   |   |--- Divida_Alta <= 0.50
+|   |   |   |   |--- class: Baixo
+|   |   |   |--- Divida_Alta >  0.50
+|   |   |   |   |--- class: Moderado
+|--- Historia de Credito_Ruim >  0.50
+|   |--- Idade_Idoso <= 0.50
+|   |   |--- class: Alto
+|   |--- Idade_Idoso >  0.50
+|   |   |--- Garantia_Adequada <= 0.50
+|   |   |   |--- class: Alto
+|   |   |--- Garantia_Adequada >  0.50
+|   |   |   |--- class: Moderado

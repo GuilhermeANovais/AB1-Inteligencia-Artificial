@@ -1,0 +1,34 @@
+|--- odor_n <= 0.50
+|   |--- stalk-root_c <= 0.50
+|   |   |--- stalk-surface-below-ring_y <= 0.50
+|   |   |   |--- odor_a <= 0.50
+|   |   |   |   |--- odor_l <= 0.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- odor_l >  0.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- odor_a >  0.50
+|   |   |   |   |--- class: 0
+|   |   |--- stalk-surface-below-ring_y >  0.50
+|   |   |   |--- class: 0
+|   |--- stalk-root_c >  0.50
+|   |   |--- population_c <= 0.50
+|   |   |   |--- class: 0
+|   |   |--- population_c >  0.50
+|   |   |   |--- class: 1
+|--- odor_n >  0.50
+|   |--- spore-print-color_r <= 0.50
+|   |   |--- stalk-surface-below-ring_y <= 0.50
+|   |   |   |--- cap-shape_c <= 0.50
+|   |   |   |   |--- cap-surface_g <= 0.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- cap-surface_g >  0.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- cap-shape_c >  0.50
+|   |   |   |   |--- class: 1
+|   |   |--- stalk-surface-below-ring_y >  0.50
+|   |   |   |--- stalk-root_b <= 0.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- stalk-root_b >  0.50
+|   |   |   |   |--- class: 0
+|   |--- spore-print-color_r >  0.50
+|   |   |--- class: 1
